@@ -1,0 +1,30 @@
+{
+  "name": "gi",
+  "version": "1.0.0",
+  "description": "GitHub-based social media CLI",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "bin": {
+    "gi": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "dayjs": "^1.11.20",
+    "ora": "^9.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
